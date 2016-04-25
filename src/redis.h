@@ -321,7 +321,7 @@ typedef long long mstime_t; /* millisecond time type. */
 #define REDIS_SUPERVISED_UPSTART 3
 
 /* Anti-warning macro... */
-#define REDIS_NOTUSED(V) ((void) V)
+#define REDIS_NOTUSED(V) ((void) V)  //去掉编译器对木有使用的局部变量的警告
 
 #define ZSKIPLIST_MAXLEVEL 32 /* Should be enough for 2^32 elements */
 #define ZSKIPLIST_P 0.25      /* Skiplist P = 1/4 */
